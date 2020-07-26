@@ -13,7 +13,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private NoteViewModel noteViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         final NoteAdapter adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
 
-        noteViewModel = new ViewModelProvider(this).get(NoteViewModel.class);
-        noteViewModel.allNotes().observe(this, new Observer<List<Note>>() {
+        final NoteViewModel model = new ViewModelProvider(this).get(NoteViewModel.class);
+        model.allNotes().observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(List<Note> notes) {
                 //update our recyclerview
