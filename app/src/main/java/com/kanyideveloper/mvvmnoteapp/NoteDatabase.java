@@ -18,7 +18,7 @@ public abstract class NoteDatabase extends RoomDatabase {
     private static NoteDatabase instance;
 
     //no method body
-    //this will be used to access the note dao
+    //this will be used to access the note_item dao
     public abstract NoteDao noteDao();
 
     //synchronized means that a single thread at time can access the class
