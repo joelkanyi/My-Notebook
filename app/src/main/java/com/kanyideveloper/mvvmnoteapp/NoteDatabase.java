@@ -46,7 +46,7 @@ public abstract class NoteDatabase extends RoomDatabase {
         private NoteDao noteDao;
 
         private PopulateDBAsyncTask(NoteDatabase db){
-            noteDao = db.noteDao()
+            noteDao = db.noteDao();
         }
 
         protected Void doInBackground(Void... voids) {
