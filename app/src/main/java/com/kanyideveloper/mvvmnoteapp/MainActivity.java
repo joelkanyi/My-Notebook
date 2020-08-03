@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         final NoteAdapter adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
 
-        final NoteViewModel model = new ViewModelProvider(this).get(NoteViewModel.class);
+        //final NoteViewModel model = new ViewModelProvider(this).get(NoteViewModel.class);
+        NoteViewModel model = new ViewModelProvider.AndroidViewModelFactory(getApplication()).create(NoteViewModel.class);
         model.allNotes().observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(List<Note> notes) {

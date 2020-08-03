@@ -14,8 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
-
-    private Context context;
     private List<Note> myNotes = new ArrayList<>();
 
 
@@ -29,9 +27,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
         Note currentNote = myNotes.get(position);
-        holder.noteTitle.setText(currentNote.getTitle());
-        holder.noteDescription.setText(currentNote.getDescription());
-        holder.notePriority.setText(String.valueOf(currentNote.getPriority()));
+        //holder.noteTitle.setText(currentNote.getTitle());
+        //holder.noteDescription.setText(currentNote.getDescription());
+        //holder.notePriority.setText(String.valueOf(currentNote.getPriority()));
     }
 
     @Override
