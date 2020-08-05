@@ -1,5 +1,6 @@
 package com.kanyideveloper.mvvmnoteapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -17,6 +18,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    NoteViewModel model;
+    public static final int ADD_NOTE_RESULT = 1;
     private FloatingActionButton add_note_fab;
 
     @Override
@@ -34,15 +37,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AddNewNoteActivity.class);
-
-                intent.
+                startActivityForResult(intent,ADD_NOTE_RESULT);
             }
         });
         final NoteAdapter adapter = new NoteAdapter();
         recyclerView.setAdapter(adapter);
 
         //final NoteViewModel model = new ViewModelProvider(this).get(NoteViewModel.class);
-        NoteViewModel model = new ViewModelProvider.AndroidViewModelFactory(getApplication()).create(NoteViewModel.class);
+        model = new ViewModelProvider.AndroidViewModelFactory(getApplication()).create(NoteViewModel.class);
         model.allNotes().observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(List<Note> notes) {
@@ -51,5 +53,25 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "onChanged", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == ADD_NOTE_RESULT && resultCode == RESULT_OK){
+         String title = data.getStringExtra(AddNewNoteActivity.EXTRA_TITLE);
+         String description = data.getStringExtra(AddNewNoteActivity.EXTRA_DESCRIPTION);
+         int priority = data.getIntExtra(AddNewNoteActivity.EXTRA_PRIORITY,1);
+
+
+         Note note = new Note(title,description,priority);
+        model.insert(note);
+
+            Toast.makeText(this, "New Note Saved", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "Note not Saved", Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -50,6 +50,7 @@ public class AddNewNoteActivity extends AppCompatActivity {
         data.putExtra(EXTRA_PRIORITY,priority);
 
         setResult(RESULT_OK,data);
+        finish();
     }
 
     @Override

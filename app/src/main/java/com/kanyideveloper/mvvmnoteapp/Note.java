@@ -13,7 +13,7 @@ private String title;
 
 private String description;
 
-private String priority;
+private int priority;
 
     public String getTitle() {
         return title;
@@ -23,7 +23,7 @@ private String priority;
         return description;
     }
 
-    public String getPriority() {
+    public int getPriority() {
         return priority;
     }
 
@@ -31,7 +31,7 @@ private String priority;
         return id;
     }
 
-    public Note(String title, String description, String priority) {
+    public Note(String title, String description, int priority) {
         this.title = title;
         this.description = description;
         this.priority = priority;
