@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.NumberPicker;
+import android.widget.Toast;
 
 public class AddNewNoteActivity extends AppCompatActivity {
     private EditText edit_title;
@@ -41,6 +42,11 @@ public class AddNewNoteActivity extends AppCompatActivity {
         String title = edit_title.getText().toString();
         String description = edit_description.getText().toString();
         int priority = numberPicker_priority.getValue();
+
+        if (title.trim().isEmpty() && description.trim().isEmpty()){
+            Toast.makeText(this, "Make sure you add a title and a description!", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
 
         Intent data = new Intent();
