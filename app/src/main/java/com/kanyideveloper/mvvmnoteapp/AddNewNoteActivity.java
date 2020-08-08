@@ -13,36 +13,32 @@ import android.widget.NumberPicker;
 import android.widget.Toast;
 
 public class AddNewNoteActivity extends AppCompatActivity {
-    private EditText edit_title;
-    private EditText edit_description;
+    private EditText edit_txt_note;
 
-    public static final String EXTRA_TITLE = "title";
-    public static final String EXTRA_DESCRIPTION = "description";
+    public static final String EXTRA_NOTE = "note";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_note);
 
-        edit_title = findViewById(R.id.edit_text_title);
-        edit_description = findViewById(R.id.edit_text_description);
+        edit_txt_note = findViewById(R.id.txt_note);
+
 
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
         setTitle("Add Note");
     }
 
     private void saveNote(){
-        String title = edit_title.getText().toString();
-        String description = edit_description.getText().toString();
+        String note = edit_txt_note.getText().toString();
 
-        if (title.trim().isEmpty() && description.trim().isEmpty()){
-            Toast.makeText(this, "Make sure you add a note title and a description!", Toast.LENGTH_SHORT).show();
+        if (note.trim().isEmpty()){
+            Toast.makeText(this, "Make sure you add a note", Toast.LENGTH_SHORT).show();
             return;
         }
 
         Intent data = new Intent();
-        data.putExtra(EXTRA_TITLE,title);
-        data.putExtra(EXTRA_DESCRIPTION,description);
+        data.putExtra(EXTRA_NOTE,note);
 
         setResult(RESULT_OK,data);
         finish();

@@ -3,31 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:elevation="10dp"
-    app:cardCornerRadius="6dp">
+    android:background="@color/whiteColor"
+    android:layout_marginTop="1dp"
+    app:cardElevation="1dp">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/text_title"
-            android:layout_width="wrap_content"
-            android:textStyle="bold"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:text="Title"
+            android:padding="16dp"
+            android:text="Note"
             android:maxLines="1"
+            android:background="@color/whiteColor"
             android:ellipsize="end"
-            android:layout_alignParentStart="true"/>
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description"
-            android:id="@+id/text_description"
-            android:layout_below="@id/text_title"/>
-    </RelativeLayout>
+            android:id="@+id/txt_note" />
 </androidx.cardview.widget.CardView>

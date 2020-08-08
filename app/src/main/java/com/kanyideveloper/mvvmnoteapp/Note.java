@@ -9,24 +9,16 @@ public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String title;
-    private String description;
+    private String note;
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
+    public String getNote(){ return note; }
 
     public int getId(){
         return id;
     }
 
-    public Note(String title, String description) {
-        this.title = title;
-        this.description = description;
+    public Note(String note) {
+        this.note = note;
     }
 
     public void setId(int id) {

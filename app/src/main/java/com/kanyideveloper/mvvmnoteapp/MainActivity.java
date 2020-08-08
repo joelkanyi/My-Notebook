@@ -83,10 +83,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADD_NOTE_RESULT_CODE && resultCode == RESULT_OK){
-         String title = data.getStringExtra(AddNewNoteActivity.EXTRA_TITLE);
-         String description = data.getStringExtra(AddNewNoteActivity.EXTRA_DESCRIPTION);
+         String my_note = data.getStringExtra(AddNewNoteActivity.EXTRA_NOTE);
 
-         Note note = new Note(title,description);
+         Note note = new Note(my_note);
         noteViewModel.insert(note);
         Toast.makeText(this, "New Note Saved", Toast.LENGTH_SHORT).show();
         }
