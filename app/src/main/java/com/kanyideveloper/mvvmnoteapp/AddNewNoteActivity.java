@@ -12,7 +12,11 @@ import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class AddNewNoteActivity extends AppCompatActivity {
+    public static final String EXTRA_DATE = "date";
     private EditText edit_txt_note;
 
     public static final String EXTRA_NOTE = "note";
@@ -39,6 +43,10 @@ public class AddNewNoteActivity extends AppCompatActivity {
 
         Intent data = new Intent();
         data.putExtra(EXTRA_NOTE,note);
+
+        String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+
+        data.putExtra(EXTRA_DATE,date);
 
         setResult(RESULT_OK,data);
         finish();

@@ -7,13 +7,32 @@
     android:layout_marginTop="1dp"
     app:cardElevation="1dp">
 
-        <androidx.appcompat.widget.AppCompatTextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Note"
-            android:maxLines="1"
-            android:background="@color/whiteColor"
-            android:ellipsize="end"
-            android:id="@+id/txt_note" />
+            android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Note"
+                    android:maxLines="1"
+                    android:background="@color/whiteColor"
+                    android:ellipsize="end"
+                    android:id="@+id/txt_note" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="2016-09-25 16:50:34"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@id/txt_note"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
 </androidx.cardview.widget.CardView>

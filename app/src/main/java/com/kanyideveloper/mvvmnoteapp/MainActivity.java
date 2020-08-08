@@ -84,8 +84,9 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADD_NOTE_RESULT_CODE && resultCode == RESULT_OK){
          String my_note = data.getStringExtra(AddNewNoteActivity.EXTRA_NOTE);
+         String my_date = data.getStringExtra(AddNewNoteActivity.EXTRA_DATE);
 
-         Note note = new Note(my_note);
+         Note note = new Note(my_note,my_date);
         noteViewModel.insert(note);
         Toast.makeText(this, "New Note Saved", Toast.LENGTH_SHORT).show();
         }

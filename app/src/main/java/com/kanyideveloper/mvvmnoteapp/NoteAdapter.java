@@ -6,7 +6,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
@@ -23,6 +26,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
         Note currentNote = notes.get(position);
         holder.note_txt.setText(currentNote.getNote());
+
+
+        holder.day_txt.setText(currentNote.getDay());
     }
 
     @Override
@@ -41,10 +47,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
     class NoteViewHolder extends RecyclerView.ViewHolder{
 
-        private TextView note_txt;
+        private TextView note_txt,day_txt;
         public NoteViewHolder(@NonNull View itemView) {
             super(itemView);
             note_txt = itemView.findViewById(R.id.txt_note);
+            day_txt = itemView.findViewById(R.id.txt_day);
         }
     }
 }

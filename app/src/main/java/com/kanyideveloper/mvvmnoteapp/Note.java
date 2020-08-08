@@ -11,14 +11,21 @@ public class Note {
 
     private String note;
 
+    private String day;
+
+    public String getDay(){
+        return day;
+    }
+
     public String getNote(){ return note; }
 
     public int getId(){
         return id;
     }
 
-    public Note(String note) {
+    public Note(String note,String day) {
         this.note = note;
+        this.day = day;
     }
 
     public void setId(int id) {
