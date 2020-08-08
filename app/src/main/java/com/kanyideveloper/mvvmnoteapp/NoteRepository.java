@@ -38,7 +38,12 @@ public class NoteRepository {
         return allNotes;
     }
 
-    //to execute the code in the background thread
+
+
+
+    //AsyncTasks to execute the code in the background thread because database operations should not be executed in the UI thread
+
+    //Insert a note
     private static class InsertNoteAsyncTask extends AsyncTask<Note,Void,Void>{
 
         private NoteDao noteDao;
@@ -56,6 +61,7 @@ public class NoteRepository {
     }
 
 
+    //Update a note
     private static class UpdateNoteAsyncTask extends AsyncTask<Note,Void,Void>{
 
         private NoteDao noteDao;
@@ -73,6 +79,7 @@ public class NoteRepository {
     }
 
 
+    //Delete a note
     private static class DeleteNoteAsyncTask extends AsyncTask<Note,Void,Void>{
 
         private NoteDao noteDao;
@@ -90,6 +97,7 @@ public class NoteRepository {
     }
 
 
+    //Delete all notes
     private static class DeleteAllNotesNoteAsyncTask extends AsyncTask<Void,Void,Void>{
 
         private NoteDao noteDao;
