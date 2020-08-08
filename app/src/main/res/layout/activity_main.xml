@@ -13,11 +13,12 @@
         tools:listitem="@layout/note_item"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_new_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/add_new_note"
-        android:src="@drawable/ic_add"
         android:layout_gravity="bottom|end"
-        android:layout_margin="34dp"/>
+        android:layout_margin="34dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/mainColor" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
