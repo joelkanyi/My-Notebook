@@ -35,7 +35,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
             setTitle("Edit Note");
             edit_txt_note.setText(intent.getStringExtra(EXTRA_NOTE));
         }else {
-            setTitle("Add Note");
+            setTitle("New Note");
         }
     }
 
