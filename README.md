@@ -66,10 +66,6 @@ Libraries used in the whole application are:
 <img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=350/>
 <img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=350/>
   </p>
-|:----:|:----:|:----:|:----:|
-
-|<img src="screenshots/app.gif" width=200/>|
-|:----:|
 
 ## Support
 --------
