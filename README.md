@@ -45,6 +45,9 @@ Libraries used in the whole application are:
 - [Material Design](https://material.io/develop/android/docs/getting-started/) - build awesome beautiful UIs.🔥🔥
 - [RecyclerView Swipe Decorator](https://github.com/wasabeef/recyclerview-animators) - Swipe to delete animator
 
+## Pattern
+<img src="screenshots/mvvm2.png"/>
+
 ## Contributors
 
 - Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
