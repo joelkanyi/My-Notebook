@@ -12,13 +12,13 @@ Build System : [Gradle](https://gradle.org/)
 
 ## Table of Contents
 
-- [Setup Requirements](#setup requirements)
-- [Getting Started](#getting started)
+- [Setup Requirements](#setup_requirements)
+- [Getting Started](#getting_started)
 - [Libraries](#libraries)
 - [Contributors](#contributors)
 - [Demo](#demo)
 - [Support](#support)
-- [Get in touch](#get in touch)
+- [Get in touch](#get_in_touch)
 - [References](#reference)
 
 
@@ -58,13 +58,13 @@ Libraries used in the whole application are:
 ## Demo
 
 <p float="left">
-<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=350/>
-<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=350/>
+<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=250/>
   </p>
 
 ## Support
