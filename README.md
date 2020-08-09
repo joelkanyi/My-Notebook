@@ -18,8 +18,8 @@ Build System : [Gradle](https://gradle.org/)
 - [Contributors](#contributors)
 - [Demo](#demo)
 - [Support](#support)
-- [Get in touch](#get_in_touch)
-- [References](#reference)
+- [Get_in_touch](#get_in_touch)
+- [References](#references)
 
 
 ## Setup Requirements
