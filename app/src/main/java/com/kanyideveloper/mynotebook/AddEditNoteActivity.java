@@ -1,4 +1,4 @@
-package com.kanyideveloper.mvvmnoteapp;
+package com.kanyideveloper.mynotebook;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.NumberPicker;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;

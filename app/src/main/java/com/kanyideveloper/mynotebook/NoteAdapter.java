@@ -1,4 +1,4 @@
-package com.kanyideveloper.mvvmnoteapp;
+package com.kanyideveloper.mynotebook;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,11 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
 
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteViewHolder> {
     private OnItemClickListener listener;

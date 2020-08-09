@@ -1,4 +1,4 @@
-package com.kanyideveloper.mvvmnoteapp;
+package com.kanyideveloper.mynotebook;
 
 import android.app.Application;
 import android.os.AsyncTask;

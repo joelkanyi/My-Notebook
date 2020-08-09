@@ -1,4 +1,4 @@
-package com.kanyideveloper.mvvmnoteapp;
+package com.kanyideveloper.mynotebook;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
