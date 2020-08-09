@@ -12,13 +12,10 @@ Build System : [Gradle](https://gradle.org/)
 
 ## Table of Contents
 
-- [Setup Requirements](#setup_requirements)
-- [Getting Started](#getting_started)
 - [Libraries](#libraries)
 - [Contributors](#contributors)
 - [Demo](#demo)
 - [Support](#support)
-- [Get_in_touch](#get_in_touch)
 - [References](#references)
 
 
