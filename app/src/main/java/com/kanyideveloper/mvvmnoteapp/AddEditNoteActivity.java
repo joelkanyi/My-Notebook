@@ -15,11 +15,12 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class AddNewNoteActivity extends AppCompatActivity {
+public class AddEditNoteActivity extends AppCompatActivity {
     public static final String EXTRA_DATE = "date";
     private EditText edit_txt_note;
 
     public static final String EXTRA_NOTE = "note";
+    public static final String EXTRA_ID = "id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,43 +29,53 @@ public class AddNewNoteActivity extends AppCompatActivity {
 
         edit_txt_note = findViewById(R.id.txt_note);
 
-
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
-        setTitle("Add Note");
+        Intent intent = getIntent();
+        if (intent.hasExtra(EXTRA_ID)){
+            setTitle("Edit Note");
+            edit_txt_note.setText(intent.getStringExtra(EXTRA_NOTE));
+        }else {
+            setTitle("Add Note");
+        }
     }
 
-    private void saveNote(){
+    private void saveNote() {
         String note = edit_txt_note.getText().toString();
 
-        if (note.trim().isEmpty()){
+        if (note.trim().isEmpty()) {
             Toast.makeText(this, "Make sure you add a note", Toast.LENGTH_SHORT).show();
             return;
         }
 
         Intent data = new Intent();
-        data.putExtra(EXTRA_NOTE,note);
+        data.putExtra(EXTRA_NOTE, note);
 
         String date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
 
-        data.putExtra(EXTRA_DATE,date);
+        data.putExtra(EXTRA_DATE, date);
 
-        setResult(RESULT_OK,data);
+        int id = getIntent().getIntExtra(EXTRA_ID,-1);
+        if (id != -1){
+            data.putExtra(EXTRA_ID,id);
+        }
+
+        setResult(RESULT_OK, data);
         finish();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.new_note_menu,menu);
+        inflater.inflate(R.menu.new_note_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.save_note:
                 saveNote();
-                return  true;
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

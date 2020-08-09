@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     NoteViewModel noteViewModel;
     public static final int ADD_NOTE_RESULT_CODE = 1;
+    public static final int EDIT_NOTE_RESULT_CODE = 2;
+
     private FloatingActionButton add_note_fab;
 
     @Override
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         add_note_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddNewNoteActivity.class);
+                Intent intent = new Intent(MainActivity.this, AddEditNoteActivity.class);
                 startActivityForResult(intent,ADD_NOTE_RESULT_CODE);
             }
         });
@@ -77,18 +79,44 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Note Deleted", Toast.LENGTH_SHORT).show();
             }
         }).attachToRecyclerView(recyclerView);
+        
+        adapter.setOnItemCLickListener(new NoteAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Note note) {
+                Intent intent = new Intent(MainActivity.this, AddEditNoteActivity.class);
+                intent.putExtra(AddEditNoteActivity.EXTRA_ID, note.getId());
+                intent.putExtra(AddEditNoteActivity.EXTRA_NOTE,note.getNote());
+                startActivityForResult(intent,EDIT_NOTE_RESULT_CODE);
+            }
+        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADD_NOTE_RESULT_CODE && resultCode == RESULT_OK){
-         String my_note = data.getStringExtra(AddNewNoteActivity.EXTRA_NOTE);
-         String my_date = data.getStringExtra(AddNewNoteActivity.EXTRA_DATE);
+         String my_note = data.getStringExtra(AddEditNoteActivity.EXTRA_NOTE);
+         String my_date = data.getStringExtra(AddEditNoteActivity.EXTRA_DATE);
 
          Note note = new Note(my_note,my_date);
         noteViewModel.insert(note);
         Toast.makeText(this, "New Note Saved", Toast.LENGTH_SHORT).show();
+        }
+
+        else if (requestCode == EDIT_NOTE_RESULT_CODE && resultCode == RESULT_OK){
+            int id = data.getIntExtra(AddEditNoteActivity.EXTRA_ID, -1);
+
+            if (id == -1){
+                Toast.makeText(this, "Note cannot be updated", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            String my_note = data.getStringExtra(AddEditNoteActivity.EXTRA_NOTE);
+            String my_date = data.getStringExtra(AddEditNoteActivity.EXTRA_DATE);
+
+            Note note = new Note(my_note,my_date);
+            note.setId(id);
+            noteViewModel.update(note);
+            Toast.makeText(this, "Note Updated", Toast.LENGTH_SHORT).show();
         }
         else{
             Toast.makeText(this, "Note not Saved", Toast.LENGTH_SHORT).show();
