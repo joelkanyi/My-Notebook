@@ -48,10 +48,6 @@ Libraries used in the whole application are:
 ## Pattern
 <img src="screenshots/mvvm2.png"/>
 
-## Contributors
-
-- Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
-
 
 ## Demo
 
@@ -64,6 +60,10 @@ Libraries used in the whole application are:
 <img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=250/>
 <img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=250/>
   </p>
+
+## Contributors
+
+- Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
 
 ## Support
 
