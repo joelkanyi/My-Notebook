@@ -45,22 +45,25 @@ Libraries used in the whole application are:
 - [Material Design](https://material.io/develop/android/docs/getting-started/) - build awesome beautiful UIs.🔥🔥
 - [RecyclerView Swipe Decorator](https://github.com/wasabeef/recyclerview-animators) - Swipe to delete animator
 
-## Contributors
-
-- Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
+## Pattern
+<img src="screenshots/mvvm2.png"/>
 
 
 ## Demo
 
 <p float="left">
-<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=250/>
-<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=250/>
+<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=300/>
+<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=300/>
   </p>
+
+## Contributors
+
+- Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
 
 ## Support
 
