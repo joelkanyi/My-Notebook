@@ -52,13 +52,13 @@ Libraries used in the whole application are:
 ## Demo
 
 <p float="left">
-<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=400/>
-<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=400/>
+<img src="screenshots/Screenshot_20200809-151201_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151215_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151429_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151445_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151457_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151504_htc-onea9-black-portrait.png" width=500/>
+<img src="screenshots/Screenshot_20200809-151510_htc-onea9-black-portrait.png" width=500/>
   </p>
 
 ## Contributors
