@@ -39,15 +39,14 @@ In order to get the app running yourself, you need to:
 Libraries used in the whole application are:
 
 - [Jetpack](https://developer.android.com/jetpack)🚀
-  - [Viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Manage UI related data in a lifecycle conscious way 
+- [Viewmodel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Manage UI related data in a lifecycle conscious way 
   and act as a channel between use cases and ui
-  - [Room](https://developer.android.com/training/data-storage/room) - Provides abstraction layer over SQLite
+- [Room](https://developer.android.com/training/data-storage/room) - Provides abstraction layer over SQLite
 - [Material Design](https://material.io/develop/android/docs/getting-started/) - build awesome beautiful UIs.🔥🔥
 - [RecyclerView Swipe Decorator](https://github.com/wasabeef/recyclerview-animators) - Swipe to delete animator
 
 ## Pattern
 <img src="screenshots/mvvm2.png"/>
-
 
 ## Demo
 
@@ -68,12 +67,10 @@ Libraries used in the whole application are:
 ## Support
 
 - Found this project useful ❤️? Support by clicking the ⭐️ button on the upper right of this page. ✌️
-
 - Notice anything else missing? File an issue 
-
 - Feel free to contribute in any way to the project from typos in docs to code review are all welcome.
 
-## Get in touch - Let's become friends
+## Get in touch - Let's be friends
 
 Please feel free to contact me if you have any questions, ideas or even if you just want to say hi. I’m up for talking, exchange ideas, collaborations or consults. You can connect with me through any of the avenues listed below:
 - [Twitter](https://twitter.com/_joelkanyi)
@@ -85,7 +82,6 @@ Please feel free to contact me if you have any questions, ideas or even if you j
 
 - https://material.io/develop/android/components/navigation-view/
 - https://codinginflow.com/
-
 
 ## License
 
