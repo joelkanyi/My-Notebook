@@ -8,7 +8,6 @@ pattern as well as Architecture Components.
 
 Min Api Level : 19 
 
-Build System : [Gradle](https://gradle.org/)
 
 ## Table of Contents
 
@@ -32,7 +31,6 @@ In order to get the app running yourself, you need to:
 2.  Import the project into Android Studio
 3.  Connect the android device with USB or just use your emulator
 4.  In Android Studio, click on the "Run" button.
-
 
 ## Libraries
 
