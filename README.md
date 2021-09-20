@@ -5,28 +5,17 @@
 
 An android application to save short notes, built with clean architecture principles, Repository Pattern and MVVM
 pattern as well as Architecture Components.
+  
+[Check it on Playstore](https://play.google.com/store/apps/details?id=com.kanyideveloper.mynotebook)  
 
 Min Api Level : 19 
 
-
-## Table of Contents
-
-- [Libraries](#libraries)
-- [Contributors](#contributors)
-- [Demo](#demo)
-- [Support](#support)
-- [References](#references)
-
-
 ## Setup Requirements
-
 - Android device or emulator
 - Android Studio
 
 ## Getting Started
-
 In order to get the app running yourself, you need to:
-
 1.  clone this project
 2.  Import the project into Android Studio
 3.  Connect the android device with USB or just use your emulator
@@ -59,17 +48,14 @@ Libraries used in the whole application are:
   </p>
 
 ## Contributors
-
 - Thanks to [Coding in Flow](https://codinginflow.com/) for amazing tutorial on the MVVM and android architectural components
 
 ## Support
-
 - Found this project useful ❤️? Support by clicking the ⭐️ button on the upper right of this page. ✌️
 - Notice anything else missing? File an issue 
 - Feel free to contribute in any way to the project from typos in docs to code review are all welcome.
 
 ## Get in touch - Let's be friends
-
 Please feel free to contact me if you have any questions, ideas or even if you just want to say hi. I’m up for talking, exchange ideas, collaborations or consults. You can connect with me through any of the avenues listed below:
 - [Twitter](https://twitter.com/_joelkanyi)
 - [Github](https://github.com/JoelKanyi)
@@ -77,7 +63,6 @@ Please feel free to contact me if you have any questions, ideas or even if you j
 - [LinkedIn](https://www.linkedin.com/in/joel-kanyi-037270174/) 
 
 ## References
-
 - https://material.io/develop/android/components/navigation-view/
 - https://codinginflow.com/
 
